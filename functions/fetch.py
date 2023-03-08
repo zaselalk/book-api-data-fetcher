@@ -1,6 +1,6 @@
 import json
 import requests
-from book_functions import generate_description
+from functions.seeds import generate_description
 import uuid
 
 

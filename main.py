@@ -1,5 +1,5 @@
 import json
-from fetchbook import fetch_book_data
+from functions.fetch import fetch_book_data
 
 
 urls = [["science", "https://gutendex.com/books/?topic=science"],
