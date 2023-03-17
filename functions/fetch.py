@@ -2,6 +2,7 @@ import json
 import requests
 from functions.seeds import generate_description
 import uuid
+import random
 
 
 def fetch_book_data(url):
@@ -27,6 +28,7 @@ def fetch_book_data(url):
             book_item.update({"category": url[0]})
             book_item.update({"sample": generate_description(3)})
             book_item.update({"discription": generate_description(20)})
+            book_item.update({"rating": random.randrange(1,5)})
 
             modified_books.append(book_item)
 
